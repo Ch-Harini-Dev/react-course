@@ -5,14 +5,16 @@ import Student from './Student.js';
 import Counter from './Counter.js';
 import { UserStatus, UserStatusTernary, UserStatusLogicalAnd } from './UserStatus.js';
 import Products from './Products.js';
+import {UserForm, SingleForm} from './components/UserForm.js';
+import {Effect, PostFetcher} from './components/Effect.js';
 
 function App() {
-  const products = [
-    {name: 'iphone', price: 90000, description: 'Mobile', id: 1},
-    {name: 'Samsung', price: 20000, description: 'Mobile', id: 2},
-    {name: 'Dell', price: 60000, description: 'Laptop', id: 3},
-    {name: 'HP', price: 70000, description: 'Laptop', id: 4},
-  ]
+  // const products = [
+  //   {name: 'iphone', price: 90000, description: 'Mobile', id: 1},
+  //   {name: 'Samsung', price: 20000, description: 'Mobile', id: 2},
+  //   {name: 'Dell', price: 60000, description: 'Laptop', id: 3},
+  //   {name: 'HP', price: 70000, description: 'Laptop', id: 4},
+  // ]
   return (
     <div className="App">
       {/* <Counter /> */}
@@ -35,7 +37,9 @@ function App() {
       {/* <UserStatus isLoggedIn={false} />
       <UserStatusTernary isLoggedIn={false} />
       <UserStatusLogicalAnd isLoggedIn={true} /> */}
-      {products.length > 0 ? <Products products={products} />: <p>No products available</p>}
+      {/* {products.length > 0 ? <Products products={products} />: <p>No products available</p>} */}
+      <Effect />
+      <PostFetcher />
     </div>
   );
 }
