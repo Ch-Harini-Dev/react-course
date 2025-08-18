@@ -14,6 +14,9 @@ import { SingleForm } from './components/UserForm.js';
 import ThemeProvider from './components/ThemeProvider.js';
 import ThemedComponent from './components/ThemedComponent.js';
 import UserComponent from './components/UserComponent.js';
+// import {StylingComponent, InlineStylingComponent} from './components/StylingComponent.js';
+// import StylingModuleComponent  from './components/StyleComponents/StylingModule.js';
+import StyleTaggedComponent from './components/StyleComponents/StyleTaggedComponent.js';
 
 function App() {
   const products = [
@@ -23,32 +26,57 @@ function App() {
     {name: 'HP', price: 70000, description: 'Laptop', id: 4},
   ]
   return (
-    <div className="App">
-      {/* <Counter /> */}
-      {/* <Student name="Harini" classText="React" grade="A" counter="0"/> */}
-      {/* <header className="App-header">
-        <Welcome />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      {/* <UserStatus isLoggedIn={false} />
-      <UserStatusTernary isLoggedIn={false} />
-      <UserStatusLogicalAnd isLoggedIn={true} /> */}
-      {/* {products.length > 0 ? <Products products={products} />: <p>No products available</p>} */}
-      <Effect />
-      <PostFetcher />
-    </div>
-  );
+    <>
+    {/* <div className="container">Hi</div> */}
+    {/* <StylingComponent />
+    <InlineStylingComponent /> */}
+    {/* <StylingModuleComponent /> */}
+    <StyleTaggedComponent />
+    </>
+    
+    // <ThemeProvider>
+    //    <ThemedComponent />
+    //    <UserComponent />
+    // </ThemeProvider>
+      // <Routes>
+      //   <Route path="/" element={<MainLayout />}>
+      //    {<Route path='/welcome' element={<WelcomeNew />} />}
+      //    {<Route path="/student/*" element={<Student name="Harini" classText="React" grade="A" counter="0"/>} />}
+      //    {<Route path="/form/*" element={<SingleForm/>} />}
+      //   </Route>
+      // </Routes>
+    // <Routes>
+    //   <Route path="/" element={<WelcomeNew />} />
+    //   <Route path="/member" element={<Student name="Harini" classText="React" grade="A" counter="0"/>} />
+    //   <Route path="/counter" element={<Counter />} />
+    // </Routes>
+   
+    // // <div className="App">
+    //   {/* <Counter /> */}
+    //   {/* <Student name="Harini" classText="React" grade="A" counter="0"/> */}
+    //   {/* <header className="App-header">
+    //     <Welcome />
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <p>
+    //       Edit <code>src/App.js</code> and save to reload.
+    //     </p>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a>
+    //   </header> */}
+    //   {/* <UserStatus isLoggedIn={false} />
+    //   <UserStatusTernary isLoggedIn={false} />
+    //   <UserStatusLogicalAnd isLoggedIn={true} /> */}
+    //   {/* {products.length > 0 ? <Products products={products} />: <p>No products available</p>} */}
+    //   {/* <Effect />
+    //   <PostFetcher />
+    // </div> */}
+      );
 }
 
 export default App;
