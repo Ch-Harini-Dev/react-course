@@ -1,20 +1,27 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import Welcome from './welcome.jsx';
+// import Welcome from './welcome.jsx';
 import Student from './Student.js';
 import Counter from './Counter.js';
-import { UserStatus, UserStatusTernary, UserStatusLogicalAnd } from './UserStatus.js';
-import Products from './Products.js';
-import {UserForm, SingleForm} from './components/UserForm.js';
-import {Effect, PostFetcher} from './components/Effect.js';
+// import { UserStatus, UserStatusTernary, UserStatusLogicalAnd } from './UserStatus.js';
+// import Products from './Products.js';
+// import {UserForm, SingleForm} from './components/UserForm.js';
+// import {Effect, PostFetcher} from './components/Effect.js';
+import WelcomeNew from './components/Welcome.js';
+import MainLayout from './components/MainLayout.js';
+import { Router, Routes, Route } from 'react-router-dom';
+import { SingleForm } from './components/UserForm.js';
+import ThemeProvider from './components/ThemeProvider.js';
+import ThemedComponent from './components/ThemedComponent.js';
+import UserComponent from './components/UserComponent.js';
 
 function App() {
-  // const products = [
-  //   {name: 'iphone', price: 90000, description: 'Mobile', id: 1},
-  //   {name: 'Samsung', price: 20000, description: 'Mobile', id: 2},
-  //   {name: 'Dell', price: 60000, description: 'Laptop', id: 3},
-  //   {name: 'HP', price: 70000, description: 'Laptop', id: 4},
-  // ]
+  const products = [
+    {name: 'iphone', price: 90000, description: 'Mobile', id: 1},
+    {name: 'Samsung', price: 20000, description: 'Mobile', id: 2},
+    {name: 'Dell', price: 60000, description: 'Laptop', id: 3},
+    {name: 'HP', price: 70000, description: 'Laptop', id: 4},
+  ]
   return (
     <div className="App">
       {/* <Counter /> */}
